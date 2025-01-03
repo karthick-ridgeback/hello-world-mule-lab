@@ -35,7 +35,7 @@
 					<classifier>mule-application</classifier>
 					<cloudHubDeployment>
 						<muleVersion>4.3.0</muleVersion>
-						<username>${env.CONNECTED_APP_CLIENT_IDD}</username>
+						<username>${env.PLATFORM_USERNAME}</username>
 						<password>${env.PLATFORM_PASSWORD}</password>
 						<applicationName>hello-world-SOMETHING-UNIQUE</applicationName>
 						<environment>Sandbox</environment>
@@ -43,7 +43,7 @@
 						<workerType>MICRO</workerType>
 						<objectStoreV2>true</objectStoreV2>
 						<region>us-east-2</region>
-						<businessGroupId>${env.GROUP_IDDD}</businessGroupId>
+						<businessGroupId>${env.BUS_GROUP_ID}</businessGroupId>
 					</cloudHubDeployment>
 				</configuration>
 			</plugin>
