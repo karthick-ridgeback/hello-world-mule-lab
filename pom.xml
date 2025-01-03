@@ -33,7 +33,7 @@
 				<extensions>true</extensions>
 				<configuration>
 					<classifier>mule-application</classifier>
-					<cloudHubDeployment>
+					<cloudHubDeployment2>
 						<muleVersion>4.3.0</muleVersion>
 						<username>${env.PLATFORM_USERNAME}</username>
 						<password>${env.PLATFORM_PASSWORD}</password>
@@ -44,7 +44,8 @@
 						<objectStoreV2>true</objectStoreV2>
 						<region>us-east-2</region>
 						<businessGroupId>${env.BUS_GROUP_ID}</businessGroupId>
-					</cloudHubDeployment>
+						<target>cde-private-space</target>
+					</cloudHubDeployment2>
 				</configuration>
 			</plugin>
 			<plugin>
